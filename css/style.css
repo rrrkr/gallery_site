@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+/* 共通部分 */
+html {
+	font-size: 100%;
+}
+body {
+	font-family: "Yu Gothic Medium","游ゴシック Medium", YuGothic, "游ゴシック体" "ヒラギノ角ゴ Pro W3", sans-serif;
+	line-height: 1.7;
+	color: black;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+/* HEADER */
+.h-title {
+	font-size: 2.5rem;
+	color: white;
+}
+
+.main-nav {
+	display: flex;
+	list-style-type: none;
+	font-size: 1.25rem;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+.main-nav li {
+	margin-left: 30px;
+}
+.main-nav a {
+	color: white;
+}
+/* javascriptでの実装も可能 */
+.main-nav a:hover {
+	color: black;
+}
+.p-header {
+	display: flex;
+	justify-content: space-between;
+}
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 4%;
+}
+
+/* FOOTER */
+footer {
+	background: #432;
+	text-align: center;
+	padding: 26px 0;
+}
+footer p {
+	color: white;
+	font-size: 0.875rem;
+}
+
+/* HOME */
+.home-contents {
+	text-align: center;
+	margin-top: 10%;
+}
+.home-contents p{
+	font-size: 1.5rem;
+	margin: 10px 0 42px;
+}
+#home {
+	background-image: url(../images/sunrise-bg.jpg);
+	min-height: 100vh;
+}
+/* 見出し */
+.page-title {
+	font-size: 3rem;
+	font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+/* BOOK */
+#book {
+	background-image: url(../images/open-book-bg.jpg);
+	height: 270px;
+	background-size: cover;
+	margin-bottom: 40px;
+	color: white;
+}
+.book-contents {
+	max-width: 560px;
+	margin-top: 2%;
+}
+.book-contents .page-title {
+	text-align: center;
+}
+.book-contents p {
+	font-size: 1.125rem;
+	margin: 10px 0 0;
+}
+
+.io {
+	display: flex;
+	justify-content: space-between;
+	color: black;
+}
+
+
+.inner-io {
+	display: grid;
+	grid-template-columns:500px;
+}
+
+.inner-upload {
+	margin-top: 6%;
+}
+.checkboxes {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+	margin-top: 6%;
+	margin-bottom: 15px;
+}
+.checkboxes label{
+	padding-left:10px;
+}
+.checkboxes label:hover{
+	color: blue;
+}
+.item img {
+	object-fit:cover;
+	width: 321px;
+	height: 230px;
+}
+.grid {
+	display: grid;
+	gap: 9px;
+	grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+	margin-top: 6%;
+	margin-bottom: 30px;
+	padding-top:40px;
+	padding-bottom:40px;
+	border-top:2px solid gray;
+	border-bottom: 2px solid gray;
+}
+
+/* キーワード検索 */
+#form2{
+	position:relative;
+	max-width:300px;
+	margin-bottom:20px;
+}
+#sbox2{
+	height:50px;
+	width: 250px;
+	padding:0 10px;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:2px;
+	outline:0;
+	background:#eee;
+}
+#sbtn2{
+	height:50px;
+	position:absolute;
+	left:255px;/*アイコン左右の位置調整*/
+	top:0;
+	background:none;
+	color:#666;
+	border:none;
+	font-size:20px;/*アイコンサイズ*/
+}
+#sbtn5:hover{
+	color:#7fbfff;
+}
+div#inner-io-form {
+    padding-top: 30px;
+}
+/*アップロードボタン*/
+#btn{
+	width:500px;
+	height:50px;
+	border-style:double;
+	border-width:3px;
+}
+#btn:hover{
+	background: #dbedf0;
+}
+
+#d_submit{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top:10px;
+	border-top:2px solid gray;
+}
+#ul{
+	width:60px;
+	border-style:solid;
+}
+#ul:hover{
+	background: #dbedf0;
+}
