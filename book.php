@@ -21,8 +21,6 @@
 			<nav>
 				<ul class="main-nav">
 					<li><a href="book.html">Book</a></li>
-					<li><a href="music.html">Music</a></li>
-					<li><a href="code.html">Code</a></li>
 				</ul>
 			</nav>
 		</header>
